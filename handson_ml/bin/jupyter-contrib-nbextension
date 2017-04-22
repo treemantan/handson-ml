@@ -1,0 +1,12 @@
+#!/Users/Shuren-Edinburgh/Documents/Python/Pythbook/handson-ml/handson_ml/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'jupyter-contrib-nbextensions==0.2.7','console_scripts','jupyter-contrib-nbextension'
+__requires__ = 'jupyter-contrib-nbextensions==0.2.7'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('jupyter-contrib-nbextensions==0.2.7', 'console_scripts', 'jupyter-contrib-nbextension')()
+    )
